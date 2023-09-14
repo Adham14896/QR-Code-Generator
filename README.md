@@ -1,7 +1,5 @@
 # QR-Code-Generator
 
-<h1>QR Code generator app</h1>
-
 <h4>type anyword in input to generate your QR</h4>
 
 <h1>live demo:</h1>
