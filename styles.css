@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  display: flex;
+}
+
+.container {
+  width: 30%;
+  height: 4%;
+  padding: 25px 35px;
+  position: relative;
+  top: 200px;
+  left: 30%;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  margin-top: 0.5rem;
+  outline: none;
+  border: 0.5px solid #0072ff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button {
+  width: 80%;
+  height: 50px;
+  color: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background: #0072ff;
+  margin-top: 4%;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+#qr-box {
+  width: 200px;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+#qr-code {
+  width: 100%;
+
+  padding: 10px;
+}
+
+#qr-box.display-qr {
+  max-height: 300px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+}
+
+.container.display {
+  height: 450px;
+}
+
+svg {
+  width: 20px;
+  position: relative;
+  bottom: 35px;
+  left: 190px;
+  cursor: pointer;
+}
+
+svg:hover {
+  color: #0072ff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1190px) {
+  html {
+    overflow-x: 0;
+  }
+  .container {
+    width: 40vh;
+    position: relative;
+    left: 20%;
+    bottom: 20%;
+  }
+  svg {
+    position: relative;
+    left: 40%;
+  }
+}
